@@ -38,4 +38,17 @@ noroot wp plugin activate --all
 # The Vagrant site setup script will restart Nginx for us
 
 echo "Finished usine.ch local instance Setup";
-echo "Visit local.usine.dev";
+
+cat << "EOF"
+--------------------------------
+--------------------------------
+|                              |
+|                              |
+|                              |
+| Visit http://local.usine.dev |
+|                              |
+|                              |
+|                              |
+--------------------------------
+--------------------------------
+EOF

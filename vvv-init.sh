@@ -4,8 +4,8 @@ echo "Commencing usine.ch local instance Setup"
 
 # Make a database, if we don't already have one
 echo "Creating database (if it's not already there)"
-mysql -u root --password=root -e "CREATE DATABASE IF NOT EXISTS wp_usine"
-mysql -u root --password=root -e "GRANT ALL PRIVILEGES ON wp_usine.* TO wp_usine@localhost IDENTIFIED BY 'wp_usine';"
+mysql -u root --password="root" -e "CREATE DATABASE IF NOT EXISTS wp_usine"
+mysql -u root --password="root" -e "GRANT ALL PRIVILEGES ON wp_usine.* TO wp_usine@localhost IDENTIFIED BY 'wp_usine';"
 
 # Run Composer
 composer install --prefer-dist

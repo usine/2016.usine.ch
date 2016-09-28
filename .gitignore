@@ -1,3 +1,5 @@
+htdocs/*
+!htdocs/index.php
 vendor
 composer.lock
 .DS_Store

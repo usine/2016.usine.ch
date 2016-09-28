@@ -21,12 +21,13 @@ then
 	cd htdocs/wordpress
 	noroot wp core config --dbname="wp_usine" --dbuser="wp_usine" --dbpass="wp_usine" --dbhost="localhost" --extra-php <<PHP
 define( 'WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content/' );
-define( 'WP_SITEURL',     'http://dev.usine.local/wordpress/');
+define( 'WP_SITEURL',     'http://local.usine.dev/wordpress/');
 PHP
-	noroot wp core install --url="dev.usine.local" --title="L'Usine" --admin_user="admin" --admin_password="admin" --admin_email="mehdi.lahlou@free.fr"
+	noroot wp core install --url="local.usine.dev" --title="L'Usine" --admin_user="admin" --admin_password="admin" --admin_email="mehdi.lahlou@free.fr"
 	noroot wp option update permalink_structure "/%year%/%monthnum%/%postname%/"
 fi
 
 # The Vagrant site setup script will restart Nginx for us
 
-echo "usine.ch local instance properly setup";
+echo "Finished usine.ch local instance Setup";
+echo "Visit local.usine.dev";

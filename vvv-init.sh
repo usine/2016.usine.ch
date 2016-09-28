@@ -27,6 +27,14 @@ PHP
 	noroot wp option update permalink_structure "/%year%/%monthnum%/%postname%/"
 fi
 
+echo "Installing theme dependencies"
+noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/themes/wp-usine install htdocs/wordpress/wp-content/themes/wp-usine
+noroot wp theme activate usine
+echo "Installing plugins dependencies"
+noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/plugins/wp-bla install htdocs/wordpress/wp-content/plugins/wp-bla
+noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/plugins/wp-voxusini install htdocs/wordpress/wp-content/plugins/wp-voxusini
+noroot wp plugin activate --all
+
 # The Vagrant site setup script will restart Nginx for us
 
 echo "Finished usine.ch local instance Setup";

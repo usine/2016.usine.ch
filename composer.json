@@ -68,7 +68,7 @@
 		"vendor-dir":  "vendor"
 	},
 	"require"     : {
-		"johnpbloch/wordpress"                        : "*",
+		"johnpbloch/wordpress"                        : "4.6.1",
 		"medfreeman/wp-usine"                         : "dev-master",
 		"wpackagist-plugin/admin-menu-editor"         : "*",
 		"wpackagist-plugin/adminimize"                : "*",

@@ -1,5 +1,5 @@
 {
-	"name"        : "medfreeman/usine.ch",
+	"name"        : "usine/usine.ch",
 	"description" : "The 2016 version of usine.ch website",
 	"authors"     : [
 		{
@@ -18,12 +18,12 @@
 		{
 			"type": "package",
 			"package": {
-				"name": "medfreeman/wp-usine",
+				"name": "usine/wp-usine",
 				"type": "wordpress-theme",
 				"version": "dev-master",
 				"source": {
 					"type": "git",
-					"url": "https://github.com/medfreeman/wp-usine.git",
+					"url": "https://github.com/usine/wp-usine.git",
 					"reference": "master"
 				},
 				"require": {
@@ -34,12 +34,12 @@
 		{
 		"type": "package",
 			"package": {
-				"name": "medfreeman/wp-bla",
+				"name": "usine/wp-bla",
 				"type": "wordpress-plugin",
 				"version": "dev-master",
 				"source": {
 					"type": "git",
-					"url": "https://github.com/medfreeman/wp-bla.git",
+					"url": "https://github.com/usine/wp-bla.git",
 					"reference": "master"
 				},
 				"require": {
@@ -50,12 +50,12 @@
 		{
 		"type": "package",
 			"package": {
-				"name": "medfreeman/wp-voxusini",
+				"name": "usine/wp-voxusini",
 				"type": "wordpress-plugin",
 				"version": "dev-master",
 				"source": {
 					"type": "git",
-					"url": "https://github.com/medfreeman/wp-voxusini.git",
+					"url": "https://github.com/usine/wp-voxusini.git",
 					"reference": "master"
 				},
 				"require": {
@@ -69,7 +69,7 @@
 	},
 	"require"     : {
 		"johnpbloch/wordpress"                        : "4.6.1",
-		"medfreeman/wp-usine"                         : "dev-master",
+		"usine/wp-usine"                              : "dev-master",
 		"wpackagist-plugin/admin-menu-editor"         : "*",
 		"wpackagist-plugin/adminimize"                : "*",
 		"afragen/github-updater"                      : "*",
@@ -81,9 +81,9 @@
 		"wpackagist-plugin/taxonomy-images"           : "*",
 		"wpackagist-plugin/wordpress-importer"        : "*",
 		"wpackagist-plugin/wp-ajaxify-comments"       : "*",
-		"medfreeman/wp-bla"                           : "dev-master",
+		"usine/wp-bla"                                : "dev-master",
 		"wpackagist-plugin/wp-less"                   : "*",
-		"medfreeman/wp-voxusini"                      : "dev-master"
+		"usine/wp-voxusini"                           : "dev-master"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/core-control"              : "*",

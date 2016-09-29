@@ -4,6 +4,10 @@ noroot() {
   sudo -EH -u "vagrant" "$@";
 }
 
+npmi() {
+  noroot npm --loglevel error --progress=false --prefix "$@" install "$@";
+}
+
 echo "Commencing usine.ch local instance Setup"
 
 # Make a database, if we don't already have one
@@ -28,11 +32,11 @@ PHP
 fi
 
 echo "Installing theme dependencies"
-noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/themes/wp-usine install htdocs/wordpress/wp-content/themes/wp-usine
+npmi htdocs/wordpress/wp-content/themes/wp-usine
 noroot wp theme activate usine
 echo "Installing plugins dependencies"
-noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/plugins/wp-bla install htdocs/wordpress/wp-content/plugins/wp-bla
-noroot npm --loglevel error --prefix htdocs/wordpress/wp-content/plugins/wp-voxusini install htdocs/wordpress/wp-content/plugins/wp-voxusini
+npmi htdocs/wordpress/wp-content/plugins/wp-bla
+npmi htdocs/wordpress/wp-content/plugins/wp-voxusini
 noroot wp plugin activate --all
 
 # The Vagrant site setup script will restart Nginx for us

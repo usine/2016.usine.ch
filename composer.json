@@ -72,6 +72,7 @@
 		"usine/wp-usine"                              : "dev-master",
 		"wpackagist-plugin/admin-menu-editor"         : "*",
 		"wpackagist-plugin/adminimize"                : "*",
+		"wpackagist-plugin/broken-link-checker"       : "*",
 		"afragen/github-updater"                      : "*",
 		"wpackagist-plugin/leaflet-maps-marker"       : "*",
 		"wpackagist-plugin/members"                   : "*",
@@ -89,7 +90,8 @@
 		"wpackagist-plugin/core-control"              : "*",
 		"wpackagist-plugin/debug-bar"                 : "*",
 		"wpackagist-plugin/log-deprecated-notices"    : "*",
-		"wpackagist-plugin/regenerate-thumbnails"     : "*"
+		"wpackagist-plugin/regenerate-thumbnails"     : "*",
+		"wpackagist-plugin/wm-options-import-export"  : "*"
 	},
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/wordpress",

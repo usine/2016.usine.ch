@@ -36,7 +36,7 @@ PHP
 	noroot wp core language update
 fi
 
-noroot cp config ${WP_CONTENT_DIR}/config
+noroot cp -R config ${WP_CONTENT_DIR}/config
 chmod 755 ${WP_CONTENT_DIR}/config
 noroot wp config pull base
 noroot wp config pull plugins

@@ -34,6 +34,22 @@
 		{
 		"type": "package",
 			"package": {
+				"name": "afragen/github-updater",
+				"type": "wordpress-plugin",
+				"version": "dev-master",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/afragen/github-updater.git",
+					"reference": "master"
+				},
+				"require": {
+					"composer/installers": "~1.0"
+				}
+			}
+		},
+		{
+		"type": "package",
+			"package": {
 				"name": "usine/wp-bla",
 				"type": "wordpress-plugin",
 				"version": "dev-master",
@@ -89,8 +105,8 @@
 		"wpackagist-plugin/admin-menu-editor"         : "*",
 		"wpackagist-plugin/adminimize"                : "*",
 		"wpackagist-plugin/broken-link-checker"       : "*",
-		"wpackagist-plugin/wp-flexible-map"             : "*",
-		"afragen/github-updater"                      : "5.6.2",
+		"wpackagist-plugin/wp-flexible-map"           : "*",
+		"afragen/github-updater"                      : "dev-master",
 		"wpackagist-plugin/members"                   : "*",
 		"wpackagist-plugin/meta-box"                  : "*",
 		"wpackagist-plugin/remove-image-links"        : "*",

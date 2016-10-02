@@ -8,6 +8,8 @@ npmi() {
   noroot npm --loglevel error --progress=false --prefix "$@" install "$@";
 }
 
+WP_CONTENT_DIR="htdocs/wordpress/wp-content"
+
 echo "Commencing usine.ch local instance Setup"
 
 # Make a database, if we don't already have one
@@ -33,15 +35,17 @@ PHP
 	noroot wp core language update
 fi
 
+noroot cp config ${WP_CONTENT_DIR}/config
+chmod 755 ${WP_CONTENT_DIR}/config
 noroot wp config pull base
 noroot wp config pull plugins
 noroot wp config pull roles
 noroot wp config pull adminimize
 echo "Installing theme development dependencies"
-npmi htdocs/wordpress/wp-content/themes/wp-usine
+npmi ${WP_CONTENT_DIR}/themes/wp-usine
 echo "Installing plugins development dependencies"
-npmi htdocs/wordpress/wp-content/plugins/wp-bla
-npmi htdocs/wordpress/wp-content/plugins/wp-voxusini
+npmi ${WP_CONTENT_DIR}/plugins/wp-bla
+npmi ${WP_CONTENT_DIR}/plugins/wp-voxusini
 
 noroot wp theme activate usine
 noroot wp import --authors="skip" contents/pages.xml

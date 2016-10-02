@@ -1,7 +1,4 @@
 htdocs/wordpress/*
-!htdocs/wordpress/wp-content/
-htdocs/wordpress/wp-content/*
-!htdocs/wordpress/wp-content/config/
 vendor
 composer.lock
 .DS_Store

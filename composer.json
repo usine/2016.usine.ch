@@ -91,7 +91,7 @@
 		"wpackagist-plugin/debug-bar"                 : "*",
 		"wpackagist-plugin/log-deprecated-notices"    : "*",
 		"wpackagist-plugin/regenerate-thumbnails"     : "*",
-		"wpackagist-plugin/wm-options-import-export"  : "*"
+		"wpackagist-plugin/wp-cfm"                    : "*"
 	},
 	"extra"       : {
 		"wordpress-install-dir": "htdocs/wordpress",

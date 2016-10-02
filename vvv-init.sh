@@ -50,6 +50,8 @@ noroot wp theme activate usine
 noroot wp import --authors="skip" contents/pages.xml
 noroot wp import --nav-menu --authors="skip" contents/menus.xml
 noroot wp config pull contents
+noroot wp menu location assign menu-principal primary
+noroot wp menu location assign les-usiniens-ne-s left
 
 # The Vagrant site setup script will restart Nginx for us
 

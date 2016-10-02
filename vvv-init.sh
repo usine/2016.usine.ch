@@ -40,8 +40,6 @@ noroot cp -R config ${WP_CONTENT_DIR}/
 chmod 755 ${WP_CONTENT_DIR}/config
 noroot wp config pull base
 noroot wp config pull plugins
-noroot wp config pull roles
-noroot wp config pull adminimize
 echo "Installing theme development dependencies"
 npmi ${WP_CONTENT_DIR}/themes/wp-usine
 echo "Installing plugins development dependencies"

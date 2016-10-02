@@ -31,6 +31,7 @@ define( 'WP_HOME',        'http://local.usine.dev/' );
 PHP
 	noroot wp core install --title="L'Usine" --admin_user="admin" --admin_password="admin" --admin_email="mehdi.lahlou@free.fr"
 	noroot wp core language install --activate "fr_FR"
+	noroot wp plugin delete hello
 	noroot wp plugin activate --all
 	noroot wp core language update
 fi

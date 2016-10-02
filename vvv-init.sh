@@ -28,16 +28,25 @@ define( 'WP_SITEURL',     'http://local.usine.dev/wordpress/' );
 define( 'WP_HOME',     'http://local.usine.dev/' );
 PHP
 	noroot wp core install --title="L'Usine" --admin_user="admin" --admin_password="admin" --admin_email="mehdi.lahlou@free.fr"
-	noroot wp option update permalink_structure "/%year%/%monthnum%/%postname%/"
+	noroot wp core language install --activate "fr_FR"
+	noroot wp plugin activate --all
+	noroot wp core language update
 fi
 
-echo "Installing theme dependencies"
+noroot wp config pull base
+noroot wp config pull plugins
+noroot wp config pull roles
+noroot wp config pull adminimize
+echo "Installing theme development dependencies"
 npmi htdocs/wordpress/wp-content/themes/wp-usine
-noroot wp theme activate usine
-echo "Installing plugins dependencies"
+echo "Installing plugins development dependencies"
 npmi htdocs/wordpress/wp-content/plugins/wp-bla
 npmi htdocs/wordpress/wp-content/plugins/wp-voxusini
-noroot wp plugin activate --all
+
+noroot wp theme activate usine
+noroot wp import --authors="skip" contents/pages.xml
+noroot wp import --nav-menu --authors="skip" contents/menus.xml
+noroot wp config pull contents
 
 # The Vagrant site setup script will restart Nginx for us
 

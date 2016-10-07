@@ -9,4 +9,4 @@ To get started:
 *  If your Vagrant is running, run vagrant halt
 *  Followed by vagrant up --provision. Perhaps a cup of tea now? The provisioning may take a while
 
-Then you can visit http://local.usine.dev/
+Then you can visit http://local.usine.dev/ (don't forget to update your `/etc/hosts` file!).

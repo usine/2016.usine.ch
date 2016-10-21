@@ -8,6 +8,22 @@ npmi() {
   noroot npm --loglevel error --progress=false --prefix "$@" install "$@";
 }
 
+cat <<EOF > /home/vagrant/.composer/config.json
+{
+  "config": {
+    "github-protocols": [
+      "https"
+    ]
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.org"
+    }
+  }
+}
+EOF
+
 WP_CONTENT_DIR="htdocs/wordpress/wp-content"
 
 echo "Commencing usine.ch local instance Setup"

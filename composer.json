@@ -113,6 +113,7 @@
 		"wpackagist-plugin/simple-link-list-widget"   : "*",
 		"wpackagist-plugin/snazzy-maps"               : "*",
 		"wpackagist-plugin/taxonomy-images"           : "*",
+		"wpackagist-plugin/wordfence"                 : "*",
 		"wpackagist-plugin/wordpress-importer"        : "*",
 		"wpackagist-plugin/wp-ajaxify-comments"       : "*",
 		"usine/wp-bla"                                : "dev-master",

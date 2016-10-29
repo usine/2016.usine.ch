@@ -104,6 +104,7 @@
 		"usine/wp-usine"                              : "dev-master",
 		"wpackagist-plugin/admin-menu-editor"         : "*",
 		"wpackagist-plugin/adminimize"                : "*",
+		"wpackagist-plugin/backupwordpress"           : "*",
 		"wpackagist-plugin/broken-link-checker"       : "*",
 		"wpackagist-plugin/wp-flexible-map"           : "*",
 		"afragen/github-updater"                      : "dev-master",

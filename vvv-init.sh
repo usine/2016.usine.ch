@@ -8,6 +8,7 @@ npmi() {
   noroot npm --loglevel error --progress=false --prefix "$@" install "$@";
 }
 
+noroot mkdir -p /home/vagrant/.composer
 cat <<EOF > /home/vagrant/.composer/config.json
 {
   "config": {

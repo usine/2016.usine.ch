@@ -1,4 +1,0 @@
-htdocs/wordpress/*
-vendor
-composer.lock
-.DS_Store

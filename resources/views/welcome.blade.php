@@ -9,7 +9,7 @@
         <title>Laravel</title>
 
         <link rel="stylesheet" href="/css/app.css">
-        <script src="/js/app.js" />
+        <script src="/js/app.js"></script>
     </head>
     <body>
       <nav class="navbar navbar-toggleable-md navbar-light bg-faded">

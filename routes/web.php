@@ -12,5 +12,33 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/usine/lieu', function () {
+    return view('usine/lieu');
+});
+
+Route::get('/usine/association', function () {
+    return view('usine/association');
+});
+
+Route::get('/agenda', function () {
+    return view('agenda');
+});
+
+Route::get('/actualites/blah', function () {
+    return view('actualites/blah');
+});
+
+Route::get('/actualites/annonces', function () {
+    return view('actualites/annonces');
+});
+
+Route::get('/renseignements/contact', function () {
+    return view('renseignements/contact');
+});
+
+Route::get('/renseignements/acces', function () {
+    return view('renseignements/acces');
 });

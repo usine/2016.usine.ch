@@ -1,0 +1,13 @@
+language: php
+
+php:
+  - 7.1
+
+before_install:
+  - sudo apt-get install -y ncftp
+
+before_script:
+  - composer install
+
+after_success:
+  - "ncftpput -R -v -u $FTP_USERNAME:$FTP_PASSWORD $FTP_URL /usine/ ./*"

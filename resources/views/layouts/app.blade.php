@@ -43,6 +43,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuActualites">
               <a class="dropdown-item" href="{{ url('actualites/blah') }}">Blah</a>
+              <a class="dropdown-item" href="{{ url('actualites/vox-usini') }}">Vox Usini</a>
               <a class="dropdown-item" href="{{ url('actualites/annonces') }}">Annonces</a>
             </div>
           </li>

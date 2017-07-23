@@ -31,6 +31,10 @@ Route::get('/actualites/blah', function () {
     return view('actualites/blah');
 });
 
+Route::get('/actualites/vox-usini', function () {
+    return view('actualites/vox-usini');
+});
+
 Route::get('/actualites/annonces', function () {
     return view('actualites/annonces');
 });

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>L’Usine – Centre Culturel Autogéré de Genève</h1>
+<h1>Présentation de L'Usine</h1>
 <p>
   L’Usine est un Centre Culturel Autogéré située dans le bâtiment de l’ancienne Usine Genevoise de Dégrossissage d’Or – UGDO- attribué par la Ville de Genève pour y réaliser des activités artistiques et socioculturelles.
 </p>

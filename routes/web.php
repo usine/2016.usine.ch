@@ -15,34 +15,34 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/usine/lieu', function () {
-    return view('usine/lieu');
-});
-
-Route::get('/usine/association', function () {
-    return view('usine/association');
-});
-
 Route::get('/agenda', function () {
     return view('agenda');
 });
 
-Route::get('/actualites/blah', function () {
-    return view('actualites/blah');
+Route::get('/actualites', function () {
+    return view('actualites/index');
 });
 
-Route::get('/actualites/vox-usini', function () {
-    return view('actualites/vox-usini');
+Route::get('/association/histoire', function () {
+    return view('association/histoire');
 });
 
-Route::get('/actualites/annonces', function () {
-    return view('actualites/annonces');
+Route::get('/association/presentation-de-l-usine', function () {
+    return view('association/presentation-de-l-usine');
+});
+
+Route::get('/renseignements/lieu', function () {
+    return view('renseignements/lieu');
 });
 
 Route::get('/renseignements/contact', function () {
     return view('renseignements/contact');
 });
 
-Route::get('/renseignements/acces', function () {
-    return view('renseignements/acces');
+Route::get('/archives/vox-usini', function () {
+    return view('archives/vox-usini');
+});
+
+Route::get('/archives/fights', function () {
+    return view('archives/fights');
 });

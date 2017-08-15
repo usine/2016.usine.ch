@@ -25,26 +25,21 @@
           <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url('/') }}">Accueil</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url('usine') }}" id="navbarDropdownMenuUsine" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              L'Usine
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuUsine">
-              <a class="dropdown-item" href="{{ url('usine/lieu') }}">Le lieu</a>
-              <a class="dropdown-item" href="{{ url('usine/association') }}">L'association</a>
-            </div>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ url('agenda') }}">Agenda</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="{{ url('actualites') }}" id="navbarDropdownMenuActualites" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url('actualites') }}">
               Actualités
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuActualites">
-              <a class="dropdown-item" href="{{ url('actualites/blah') }}">Blah</a>
-              <a class="dropdown-item" href="{{ url('actualites/vox-usini') }}">Vox Usini</a>
-              <a class="dropdown-item" href="{{ url('actualites/annonces') }}">Annonces</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url('association') }}" id="navbarDropdownMenuAssociation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              L'association
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuAssociation">
+              <a class="dropdown-item" href="{{ url('association/histoire') }}">Histoire</a>
+              <a class="dropdown-item" href="{{ url('association/presentation-de-l-usine') }}">Présentation de L'Usine</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -52,8 +47,17 @@
               Renseignements généreux
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuRenseignements">
+              <a class="dropdown-item" href="{{ url('renseignements/lieu') }}">Le lieu</a>
               <a class="dropdown-item" href="{{ url('renseignements/contact') }}">Contact</a>
-              <a class="dropdown-item" href="{{ url('renseignements/acces') }}">Accès</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{ url('archives') }}" id="navbarDropdownMenuArchives" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Archives
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuArchives">
+              <a class="dropdown-item" href="{{ url('archives/vox-usini') }}">Vox Usini</a>
+              <a class="dropdown-item" href="{{ url('archives/fights') }}">Fights</a>
             </div>
           </li>
         </ul>
